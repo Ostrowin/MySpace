@@ -1,0 +1,9 @@
+
+<ul class="breadcrumb">
+  <a class="fa-home" [href]="'/home'"><fa-icon [icon]="faHome"></fa-icon></a>
+  @for (breadcrumb of (breadcrumbs$ | async); track $index) {
+  <li class="breadcrumb-item">
+    <a [href]="breadcrumb.url">{{ breadcrumb.label }}</a>
+  </li>
+  }
+</ul>

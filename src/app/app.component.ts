@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
+import { BreadcrumbComponent } from './shared/breadcrumb/breadcrumb.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterOutlet, BreadcrumbComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'frontend';
 
-  constructor (private router: Router) {}
+  constructor () {}
 
-  navigate() : void {
-    this.router.navigate(['/advent/day-one']);
-  }
 }

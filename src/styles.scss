@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+$base-color: #72cdec;
+$secondary-color: #518798;
+$third-color: #272845;
+$additionaly-color: #d65915;
+$dark-color: #140c10;
+
+html, body {
+  background-color: $dark-color;
+  color: $base-color;
+  font-family: 'Roboto', sans-serif;
+}

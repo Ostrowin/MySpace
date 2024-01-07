@@ -1,0 +1,24 @@
+$base-color: #72cdec;
+$base-hover: #83defd;
+$secondary-color: #518798;
+$third-color: #272845;
+$additional-color: #d65915;
+$additional-hover: #e76a26;
+$dark-color: #140c10;
+
+.tile {
+  font-size: 24px;
+  font-weight: 900;
+  color: $dark-color !important;
+  background-color: $base-color;
+  width: 242px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  border-radius: 8px;
+
+  &:hover {
+    background-color: $base-hover;
+  }
+
+}
